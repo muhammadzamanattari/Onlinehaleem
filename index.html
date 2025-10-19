@@ -1,0 +1,220 @@
+<!doctype html>
+
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HakeemOnline — طبِ یونانی | قدرتی شفا</title>
+  <meta name="description" content="HakeemOnline — طبِ یونانی کے اصولوں کے مطابق ہربل علاج، آن لائن مشاورت، اور قدرتی مصنوعات۔ محفوظ، مؤثر اور روایت کے عین مطابق۔">
+  <meta name="theme-color" content="#21412a">  <!-- Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">  <!-- Structured Data (Organization) -->  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"HakeemOnline","url":"https://www.hakeemonline.com","logo":"https://www.hakeemonline.com/assets/logo.png","contactPoint":[{"@type":"ContactPoint","telephone":"+92-3XX-XXXXXXX","contactType":"customer service","areaServed":"PK"}],"sameAs":[]}
+  </script>  <style>
+    :root{
+      --accent:#2b7a4a;
+      --accent-2:#1e5b33;
+      --muted:#7a7a7a;
+      --bg:#f7faf6;
+      --card:#ffffff;
+      --glass:rgba(255,255,255,0.6);
+      --premium:#0f3b24;
+      --gold:#c59a47;
+      --radius:18px;
+      --max-width:1200px;
+      --urdu-font: 'Noto Nastaliq Urdu', serif;
+    }
+
+    /* Basic reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;background:linear-gradient(180deg,var(--bg),#eef6ee);font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;color:#0b2b1a}
+
+    /* Container */
+    .container{max-width:var(--max-width);margin:32px auto;padding:24px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px;border-radius:16px;background:linear-gradient(90deg, rgba(43,122,74,0.07), rgba(30,91,51,0.03));box-shadow:0 8px 30px rgba(12,34,18,0.06)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:'Playfair Display', serif;font-size:20px;box-shadow:0 6px 20px rgba(18,42,20,0.25)}
+    .brand h1{font-family:'Playfair Display', serif;font-size:20px;color:var(--premium)}
+    .brand p{font-size:12px;color:var(--muted)}
+    nav a{margin-left:14px;text-decoration:none;color:var(--premium);font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:22px}
+    .hero-card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:0 20px 50px rgba(10,30,18,0.06)}
+    .hero h2{font-family:'Playfair Display', serif;font-size:28px;color:var(--premium);margin-bottom:8px}
+    .hero p.lead{color:#20402d;line-height:1.6;margin-bottom:16px}
+    .features{display:flex;gap:12px;flex-wrap:wrap}
+    .feature{background:linear-gradient(180deg,var(--glass),rgba(255,255,255,0.85));padding:12px;border-radius:12px;min-width:160px}
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .btn{padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white}
+    .btn-outline{border:2px solid var(--accent);color:var(--accent);background:transparent}
+
+    /* Right column - product/lead capture */
+    .leadbox{background:linear-gradient(180deg,#fff,#f7fff8);border-radius:16px;padding:20px;box-shadow:0 12px 30px rgba(6,30,18,0.06)}
+    .leadbox h3{font-family:'Playfair Display', serif;margin-bottom:6px}
+    .leadbox p{font-size:13px;color:var(--muted);margin-bottom:12px}
+    .input{display:flex;gap:8px}
+    .input input{flex:1;padding:12px;border-radius:10px;border:1px solid #e6efe9}
+    .input button{padding:12px 14px;border-radius:10px;background:var(--accent);color:white;border:none}
+
+    /* Services */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 10px 30px rgba(12,34,18,0.04)}
+    .card h4{font-family:'Playfair Display', serif;color:var(--premium);margin-bottom:6px}
+    .card p{color:var(--muted);font-size:13px}
+
+    /* Products table */
+    .products{margin-top:20px;background:linear-gradient(180deg,#fff,#f8fff9);padding:18px;border-radius:14px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:12px;border-bottom:1px solid #eef6ee;text-align:right}
+    th{color:var(--premium);font-weight:700}
+
+    /* Blog */
+    .blog{display:flex;gap:12px;margin-top:20px}
+    .post{flex:1;background:var(--card);padding:16px;border-radius:12px}
+    .post h5{font-family:'Playfair Display', serif}
+
+    /* Contact & Footer */
+    footer{margin-top:28px;padding:22px;border-radius:14px;background:linear-gradient(90deg, rgba(30,91,51,0.04), rgba(43,122,74,0.02));display:flex;justify-content:space-between;align-items:center}
+    .social a{margin-left:10px;text-decoration:none;color:var(--accent)}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:640px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style></head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">ح</div>
+        <div>
+          <h1>HakeemOnline</h1>
+          <p>طبِ یونانی کے عین مطابق — قدرتی، محفوظ، مؤثر</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">خدمات</a>
+        <a href="#products">مصنوعات</a>
+        <a href="#blog">مضامین</a>
+        <a href="#contact">رابطہ</a>
+      </nav>
+    </header><section class="hero">
+  <div class="hero-card">
+    <h2>قدرتی شفا — طبِ یونانی (Tibb-e-Unani) کے اصول کے تحت</h2>
+    <p class="lead">ہم صدیوں پرانے حکیمانہ علم کو جدید طریقوں کے ساتھ ملا کر محفوظ ہربل علاج، مکمل آن لائن مشاورت، اور مخصوص مؤثر کورسز پیش کرتے ہیں۔ ہمارا ہر نسخہ یونانی اصولِ مزاج (Temperament) اور غذائی مطابقت کے مطابق تیار کیا جاتا ہے۔</p>
+
+    <div class="features">
+      <div class="feature">
+        <strong>قدرتی مرکبات</strong>
+        <p>صرف خالص ہربلز اور روایتی اجزاء۔</p>
+      </div>
+      <div class="feature">
+        <strong>ذاتی مزاج کا تعین</strong>
+        <p>ہر مریض کا مزاج جانچ کر علاج ترتیب دیا جاتا ہے۔</p>
+      </div>
+      <div class="feature">
+        <strong>آن لائن مشاورت</strong>
+        <p>WhatsApp اور ویڈیوز کے ذریعے مکمل رہنمائی۔</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a class="btn btn-primary" href="#contact">اب رابطہ کریں</a>
+      <a class="btn btn-outline" href="#services">ہمارے کورسز دیکھیں</a>
+    </div>
+  </div>
+
+  <aside class="leadbox">
+    <h3>فوری مشورہ لیں</h3>
+    <p>اپنے مسئلے کی تفصیل WhatsApp پر بھیجیں، ہم آپ کو مفت ابتدائی مشورہ دیں گے۔</p>
+    <div class="input">
+      <input type="text" placeholder="اپنا نام درج کریں">
+      <button>Send</button>
+    </div>
+    <hr style="margin:12px 0;border:none;border-top:1px solid #eef6ee">
+    <p style="font-size:13px;color:var(--muted)"><strong>فوری رابطہ:</strong> +92-3XX-XXXXXXX</p>
+  </aside>
+</section>
+
+<section id="services" class="grid">
+  <div class="card">
+    <h4>مزاجی تشخیص (Temperament)</h4>
+    <p>ہر مریض کا طبع و مزاج جانچا جاتا ہے — خون (Dam), بلغم (Balgham), صفرا (Safra), سوداء (Sauda) کے توازن کی روشنی میں علاج مرتب کیا جاتا ہے۔</p>
+  </div>
+  <div class="card">
+    <h4>ہربل علاج</h4>
+    <p>قدرتی جڑی بوٹیاں اور سنتی ترکیبات جو تندرستی بحال کریں اور ضمنی اثرات سے پاک ہوں۔</p>
+  </div>
+  <div class="card">
+    <h4>روحانی رہنمائی</h4>
+    <p>نظربد، حسد، اور روحانی کمزوری کے لیے حکمتِ عملیاں اور دعا بے مثال نتائج دیتی ہیں۔</p>
+  </div>
+</section>
+
+<section id="products" class="products">
+  <h3 style="text-align:right;font-family:'Playfair Display', serif;color:var(--premium)">ہماری منتخب مصنوعات</h3>
+  <table aria-label="Products table">
+    <thead>
+      <tr><th>مصنوعہ</th><th>مقصد</th><th>مدت</th><th>قیمت</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Liver Detox Syrup</td><td>جگر کی صحت</td><td>30 دن</td><td>₨ 1,499</td></tr>
+      <tr><td>Smart Slim Capsules</td><td>وزن میں کمی</td><td>30 دن</td><td>₨ 1,999</td></tr>
+      <tr><td>Power Plus Tonic</td><td>طاقت و توانائی</td><td>28 دن</td><td>₨ 1,799</td></tr>
+      <tr><td>Hair Grow Oil</td><td>بالوں کی نشوونما</td><td>60 دن</td><td>₨ 899</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="blog" class="blog">
+  <div class="post">
+    <h5>طبِ یونانی کے پانچ بنیادی ستون</h5>
+    <p>مزاج، غذا، رہن سہن، موسم، اور دوا — یہ وہ ستون ہیں جن کے مطابق ہر علاج مرتب کیا جاتا ہے۔</p>
+  </div>
+  <div class="post">
+    <h5>قدرتی خوراکیں جو جگر کو مضبوط کریں</h5>
+    <p>گھی، شہد، تل، اور مخصوص سبزیاں جگر کی طبیعت کے مطابق مفید سمجھی جاتی ہیں۔</p>
+  </div>
+  <div class="post">
+    <h5>گھر پر کے آسان حکیمانہ نسخے</h5>
+    <p>عام مسائل کے لیے گھریلو ٹوٹکے جو طبِ یونانی کے اصولوں پر مبنی ہیں۔</p>
+  </div>
+</section>
+
+<section id="contact" style="margin-top:20px">
+  <div class="card">
+    <h4>رابطہ کریں</h4>
+    <p>ہم سے رابطہ کرنے کے لیے نیچے فارم بھریں یا WhatsApp پر پیغام بھیجیں۔</p>
+    <form style="display:flex;flex-direction:column;gap:10px;margin-top:12px">
+      <input type="text" placeholder="آپ کا نام" style="padding:10px;border-radius:10px;border:1px solid #e9f3ea">
+      <input type="tel" placeholder="فون نمبر" style="padding:10px;border-radius:10px;border:1px solid #e9f3ea">
+      <textarea placeholder="اپنا مسئلہ مختصر لکھیں" style="padding:12px;border-radius:10px;border:1px solid #e9f3ea"></textarea>
+      <button type="submit" class="btn btn-primary" style="width:160px">پیغام بھیجیں</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <strong>HakeemOnline</strong>
+    <p style="font-size:13px;color:var(--muted)">قدرتی شفا — طبِ یونانی کے اصول کے مطابق</p>
+  </div>
+  <div style="text-align:right">
+    <div class="social">
+      <a href="#">WhatsApp</a>
+      <a href="#">Facebook</a>
+      <a href="#">YouTube</a>
+    </div>
+    <p style="font-size:13px;color:var(--muted);margin-top:8px">© 2025 HakeemOnline. All rights reserved.</p>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
